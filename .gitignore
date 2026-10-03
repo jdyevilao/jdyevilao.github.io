@@ -1,0 +1,6 @@
+.mcp.json*
+.env*
+.vscode/
+.claude/
+Thumbs.db
+.DS_Store

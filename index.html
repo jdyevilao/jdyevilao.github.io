@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VENTUS Tecnología · Desarrollo web y soporte técnico</title>
+  <meta name="description" content="VENTUS Tecnología: desarrollo de páginas web, soporte de equipos, instalación de programas, mantenimiento, redes y correo para empresas y personas en Contulmo, Chile.">
+  <meta name="theme-color" content="#0E1116">
+  <script>
+    // Aplica el tema antes de pintar la página, para evitar un parpadeo.
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('ventus-tema'); } catch (e) {}
+      // Oscuro por defecto; claro solo si el visitante lo eligió antes.
+      var theme = saved === 'light' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="VENTUS Tecnología, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">&gt;_</span>
+        <span class="brand-text">VENTUS <span class="brand-sub">Tecnología</span></span>
+      </a>
+
+      <button class="theme-toggle" type="button" aria-label="Cambiar a tema claro">
+        <svg class="icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav id="menu-principal" class="main-nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#nosotros">Quiénes somos</a>
+        <a href="#planes">Planes</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="btn btn-outline nav-cta">Pedir diagnóstico</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="container hero">
+      <div class="hero-copy">
+        <p class="eyebrow">// desarrollo web · soporte técnico · mantenimiento</p>
+        <h1>Tu tecnología funcionando. Tu web vendiendo.</h1>
+        <p class="lead">En VENTUS Tecnología creamos páginas web a medida y mantenemos tus equipos en marcha, para que tú te ocupes de tu negocio y no de la informática.</p>
+        <div class="actions">
+          <a href="#contacto" class="btn btn-primary btn-lg">Cotizar mi proyecto</a>
+          <a href="#servicios" class="btn btn-ghost btn-lg">Ver servicios</a>
+        </div>
+      </div>
+
+      <div class="terminal" role="img" aria-label="Consola de ejemplo: revisión de un equipo y publicación de un sitio web">
+        <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="terminal-body" aria-hidden="true">
+          <div><span class="prompt">$</span> ventus revisar --equipo oficina-01</div>
+          <div>✓ disco ............ ok</div>
+          <div>✓ antivirus ........ actualizado</div>
+          <div>✓ respaldo ......... hoy 03:00</div>
+          <div class="gap"><span class="prompt">$</span> ventus publicar --sitio tu-negocio</div>
+          <div>✓ sitio en línea</div>
+          <div class="cursor">_</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="container">
+        <p class="eyebrow">01 / servicios</p>
+        <h2>Todo lo que tu negocio necesita en tecnología, en un solo lugar.</h2>
+        <div class="grid grid-4">
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 9l-2 2 2 2M16 9l2 2-2 2M13 8l-2 6"/><path d="M8 21h8"/></svg>
+            <h3>Desarrollo de páginas web</h3>
+            <p>Sitios corporativos y landing pages. Rápidos, adaptados a celular y listos para aparecer en los distintos navegadores.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
+            <h3>Soporte de equipos</h3>
+            <p>Reparación, formateo, limpieza y actualización de computadores e impresoras, e instalación de programas. En tu oficina o de forma remota.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            <h3>Mantenimiento y seguridad</h3>
+            <p>Respaldos automáticos, antivirus, actualizaciones y monitoreo para que nada te tome por sorpresa.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M2 9a14.5 14.5 0 0 1 20 0"/><circle cx="12" cy="19.5" r="1"/></svg>
+            <h3>Redes y correo</h3>
+            <p>Instalación de wifi y redes de oficina, correos con tu dominio y configuración de cuentas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="section">
+      <div class="container">
+        <p class="eyebrow">02 / cómo trabajamos</p>
+        <h2>Cuatro pasos, sin letra chica.</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">[01]</span>
+            <h3>Diagnóstico</h3>
+            <p>Conversamos y revisamos qué necesitas o qué está fallando.</p>
+          </li>
+          <li>
+            <span class="step-num">[02]</span>
+            <h3>Propuesta</h3>
+            <p>Te enviamos un presupuesto claro, con plazos y precio cerrado.</p>
+          </li>
+          <li>
+            <span class="step-num">[03]</span>
+            <h3>Ejecución</h3>
+            <p>Construimos o reparamos, y te mostramos avances en el camino.</p>
+          </li>
+          <li>
+            <span class="step-num">[04]</span>
+            <h3>Acompañamiento</h3>
+            <p>Seguimos disponibles para soporte y mejoras continuas.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section">
+      <div class="container about">
+        <div class="about-head">
+          <p class="eyebrow">03 / quiénes somos</p>
+          <h2>Experiencia real detrás de cada solución.</h2>
+          <p class="about-stat"><strong>+13</strong> años en tecnologías de la información</p>
+        </div>
+        <div class="about-body">
+          <p>Profesional con más de 13 años de experiencia en el ámbito de las tecnologías de la información, desempeñándose como desarrollador de software, analista de calidad, líder de equipos, administrador de ambientes empresariales, especialista en continuidad operacional y habilitación de servicios en distintos ambientes.</p>
+          <ul class="tags" aria-label="Áreas de experiencia">
+            <li>Desarrollo de software</li>
+            <li>Análisis de calidad</li>
+            <li>Liderazgo de equipos</li>
+            <li>Administración de ambientes empresariales</li>
+            <li>Continuidad operacional</li>
+            <li>Habilitación de servicios</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="planes" class="section">
+      <div class="container">
+        <p class="eyebrow">04 / planes</p>
+        <h2>Elige cómo quieres empezar.</h2>
+        <div class="grid grid-3">
+          <article class="plan">
+            <h3>Web Esencial</h3>
+            <p class="price"><span>desde </span>$60.000</p>
+            <ul>
+              <li>Sitio de hasta 5 secciones</li>
+              <li>Diseño adaptado a celular</li>
+              <li>Formulario de contacto y WhatsApp</li>
+              <li>Dominio y hosting el primer año</li>
+            </ul>
+            <a href="#contacto" class="btn btn-ghost btn-block" data-servicio="Página web">Elegir plan</a>
+          </article>
+          <article class="plan plan-featured">
+            <div class="plan-head">
+              <h3>Soporte Mensual</h3>
+              <span class="badge">recomendado</span>
+            </div>
+            <p class="price"><span>desde </span>$15.000<span> / mes</span></p>
+            <ul>
+              <li>Hasta 2 visitas al mes, presenciales o remotas</li>
+              <li>Instalación y configuración de programas</li>
+              <li>Respaldos y antivirus gestionados</li>
+              <li>Mantenimiento de tu sitio web</li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary btn-block" data-servicio="Plan mensual">Elegir plan</a>
+          </article>
+          <article class="plan">
+            <h3>Proyecto a medida</h3>
+            <p class="price">A cotizar</p>
+            <ul>
+              <li>Sistemas web a medida</li>
+              <li>Integraciones y automatizaciones</li>
+              <li>Instalación de redes de oficina</li>
+              <li>Plazos y alcance definidos contigo</li>
+            </ul>
+            <a href="#contacto" class="btn btn-ghost btn-block" data-servicio="Otro">Conversemos</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container contact">
+        <div class="contact-info">
+          <p class="eyebrow">05 / contacto</p>
+          <h2>Cuéntanos qué necesitas.</h2>
+          <p class="lead">Respondemos en menos de 24 horas. El diagnóstico inicial no tiene costo.</p>
+          <ul class="contact-list">
+            <li><span>Teléfono:</span> <a href="tel:+56964419004" data-config="telefono">+56 9 6441 9004</a></li>
+            <li><span>WhatsApp:</span> <a href="https://wa.me/56964419004?text=Hola%20VENTUS%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></li>
+            <li><span>Dirección:</span> <span data-config="ciudad">Contulmo, Chile</span></li>
+          </ul>
+        </div>
+
+        <form id="form-contacto" class="contact-form" novalidate>
+          <label>Nombre
+            <input type="text" name="nombre" autocomplete="name" required>
+          </label>
+          <label>Correo o teléfono
+            <input type="text" name="contacto" autocomplete="email" required>
+          </label>
+          <label>Servicio
+            <select name="servicio">
+              <option>Página web</option>
+              <option>Soporte de equipos</option>
+              <option>Plan mensual</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label>Mensaje
+            <textarea name="mensaje" rows="4" required></textarea>
+          </label>
+          <!-- Trampa para bots: las personas no ven este campo y debe llegar vacío. -->
+          <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar mensaje</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="anio">2026</span> VENTUS Tecnología</span>
+      <span>desarrollo web · soporte técnico · <span data-config="ciudad">Contulmo, Chile</span></span>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/56964419004?text=Hola%20VENTUS%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.9L3 21l1.2-4.4A9 9 0 1 1 21 12z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
